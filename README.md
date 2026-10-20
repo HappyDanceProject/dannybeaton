@@ -9,7 +9,7 @@ about.html        About + contact form   (served at /about)
 404.html          Page not found
 assets/css/site.css
 assets/js/site.js
-assets/fonts/     Self-hosted fonts (Bricolage Grotesque, Newsreader)
+assets/fonts/     Self-hosted fonts (Bricolage Grotesque, Schibsted Grotesk)
 assets/img/       Photos (.webp)
 _redirects        Old .com.au page addresses -> new pages
 _headers          Security and caching headers
