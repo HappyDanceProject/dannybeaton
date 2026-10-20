@@ -245,12 +245,12 @@ h1 cite, h2 cite, h3 cite, .head cite, .display cite { font-style: normal; }
     .book .book-cover.reveal { animation-name: from-left; animation-range: entry 0% cover 35%; }
     .book:nth-of-type(even) .book-cover.reveal { animation-name: from-right; }
     /* Statement: the section holds while each line rises into place */
-    .statement { view-timeline-name: --statement; height: 260svh; }
+    .statement { view-timeline-name: --statement; height: 210svh; }
     .statement-pin { position: sticky; top: 0; height: 100svh; min-height: 0; padding-block: 0; }
     .statement .ln > span { animation: rise linear both; animation-timeline: --statement; }
-    .statement .ln:nth-child(1) > span { animation-range: contain 0% contain 22%; }
-    .statement .ln:nth-child(2) > span { animation-range: contain 22% contain 44%; }
-    .statement .ln:nth-child(3) > span { animation-range: contain 44% contain 66%; }
+    .statement .ln:nth-child(1) > span { animation-range: entry 35% entry 85%; }
+    .statement .ln:nth-child(2) > span { animation-range: entry 80% contain 30%; }
+    .statement .ln:nth-child(3) > span { animation-range: contain 25% contain 60%; }
     @media (max-width: 760px) {
       .statement { height: auto; }
       .statement-pin { position: static; height: auto; min-height: 0; padding-block: 96px; }
