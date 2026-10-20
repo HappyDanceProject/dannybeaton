@@ -51,7 +51,9 @@ h1 cite, h2 cite, h3 cite, .head cite, .display cite { font-style: normal; }
 /* ---------- Header ---------- */
 .site-header { position: absolute; inset: 0 0 auto; z-index: 10; view-transition-name: site-header; }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 28px; }
-.mark { font-family: var(--display); font-weight: 800; font-stretch: 75%; text-transform: uppercase; font-size: 26px; line-height: .82; }
+.mark { font-family: var(--display); font-weight: 800; font-stretch: 75%; text-transform: uppercase; font-size: 26px; line-height: .82; display: flex; align-items: center; gap: 12px; }
+.mark-sketch { width: auto; height: 50px; }
+.newsletter { scroll-margin-top: 40px; }
 .site-nav ul { list-style: none; padding: 0; display: flex; align-items: center; gap: clamp(16px, 3vw, 40px); font-size: 15px; font-weight: 500; }
 .site-nav a.u { padding-bottom: 2px; background: linear-gradient(currentColor 0 0) 0 100% / 0 1px no-repeat; transition: background-size .35s var(--ease); }
 .site-nav a.u:hover, .site-nav a.u[aria-current="page"] { background-size: 100% 1px; }
@@ -300,7 +302,8 @@ h1 cite, h2 cite, h3 cite, .head cite, .display cite { font-style: normal; }
   .site-header .wrap { padding-block: 20px; }
   .site-nav ul { gap: 14px; font-size: 14px; }
   .site-nav .btn { padding: 10px 12px; font-size: 13px; }
-  .mark { font-size: 22px; }
+  .mark { font-size: 22px; gap: 10px; }
+  .mark-sketch { height: 40px; }
   .shelf-item { padding-inline: 12px; }
   .shelf-item h3 { font-size: 19px; }
   .shelf-item .genre { font-size: 14px; }
