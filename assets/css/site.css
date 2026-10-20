@@ -81,7 +81,7 @@ img { display: block; max-width: 100%; height: auto; }
 /* ---------- Hero (home) ---------- */
 .hero { position: relative; min-height: 100svh; display: grid; align-items: end; overflow: clip; }
 .hero-photo { position: absolute; inset: 0; }
-.hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 47% 30%; filter: grayscale(.85) brightness(.5) contrast(1.15); }
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 47% 30%; transform: scale(1.35); transform-origin: 47% 80%; filter: grayscale(.85) brightness(.5) contrast(1.15); }
 .hero-photo .ph { width: 100%; height: 100%; border: 0; }
 .hero::before { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(to top, var(--bg) 6%, rgb(12 13 12 / .55) 45%, rgb(12 13 12 / .15) 75%); }
 .hero-inner { position: relative; z-index: 2; padding-bottom: clamp(32px, 6vw, 72px); text-align: center; }
@@ -173,6 +173,8 @@ img { display: block; max-width: 100%; height: auto; }
 .chunk-img .ph, .chunk-img img { aspect-ratio: 4 / 5; width: 100%; object-fit: cover; }
 .chunk-img .label { display: block; margin-top: 14px; }
 .chunk-img img { filter: grayscale(.55) contrast(1.05) brightness(.92); }
+.chunk-img:has(.cut) { background: radial-gradient(ellipse 60% 55% at 50% 40%, color-mix(in srgb, var(--accent) 30%, transparent), transparent 70%); }
+.chunk-img img.cut { aspect-ratio: auto; object-fit: contain; -webkit-mask-image: linear-gradient(to bottom, #000 80%, transparent); mask-image: linear-gradient(to bottom, #000 80%, transparent); }
 .chunk-text > .prose:first-child { margin-top: 0; }
 .chunk .lead { font-family: var(--serif); font-weight: 400; font-size: clamp(28px, 3.2vw, 44px); line-height: 1.18; letter-spacing: -.01em; text-wrap: balance; }
 .divider { padding-block: clamp(96px, 14vw, 200px); text-align: center; }
@@ -263,7 +265,7 @@ img { display: block; max-width: 100%; height: auto; }
   .book-cover .cover { width: min(70%, 280px); margin-inline: 0; }
 }
 @media (max-width: 560px) {
-  .hero-photo img { object-position: 41% 30%; }
+  .hero-photo img { object-position: 41% 30%; transform: scale(1.15); transform-origin: 41% 70%; }
   .site-header .wrap { padding-block: 20px; }
   .site-nav ul { gap: 14px; font-size: 14px; }
   .site-nav .btn { padding: 10px 12px; font-size: 13px; }
