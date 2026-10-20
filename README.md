@@ -43,4 +43,4 @@ Search the HTML for `Replace` and `placeholder` to find them all.
 
 - Fonts are licensed under the SIL Open Font License and are self-hosted, so nothing loads from Google.
 - The site is dark-only by design.
-- Animation: your name rises in on load, page titles and the Shelf fade in as they scroll into view, and pages cross-fade. Everything switches off for visitors who've asked their device for reduced motion.
+- Animation: your name rises letter by letter and the photo pushes in on load; the Worldbuilder statement holds on screen while each line rises (phones get a simpler version); Shelf covers deal in like cards; Books covers slide in from their own side; pages cross-fade. Everything switches off for visitors who've asked their device for reduced motion.

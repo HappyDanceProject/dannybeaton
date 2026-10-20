@@ -11,7 +11,7 @@ if (!reduceMotion && !CSS.supports('animation-timeline: view()') && 'Intersectio
       if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
     }
   }, { rootMargin: '0px 0px -10% 0px' });
-  document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+  document.querySelectorAll('.reveal, .statement').forEach((el) => io.observe(el));
 }
 
 // Footer year.
