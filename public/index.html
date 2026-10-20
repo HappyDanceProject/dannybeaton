@@ -30,18 +30,42 @@
   <link rel="stylesheet" href="/assets/css/site.css">
   <script src="/assets/js/site.js" defer></script>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Danny Beaton",
-    "jobTitle": "Author",
-    "nationality": "Australian",
-    "homeLocation": { "@type": "Place", "name": "Sydney, Australia" },
-    "description": "Australian fantasy author. Come for the worlds, stay for the heart.",
-    "url": "https://dannybeaton.com/",
-    "image": "https://dannybeaton.com/assets/img/danny-headshot-1200.webp",
-    "sameAs": ["https://www.instagram.com/dannybeaton/"]
-  }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://dannybeaton.com/#website",
+      "url": "https://dannybeaton.com/",
+      "name": "Danny Beaton",
+      "inLanguage": "en-AU",
+      "publisher": {
+        "@id": "https://dannybeaton.com/#danny"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://dannybeaton.com/#danny",
+      "name": "Danny Beaton",
+      "jobTitle": "Author",
+      "nationality": "Australian",
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Sydney, Australia"
+      },
+      "description": "Australian fantasy author. Come for the worlds, stay for the heart.",
+      "url": "https://dannybeaton.com/",
+      "image": "https://dannybeaton.com/assets/img/danny-headshot-1200.webp",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Deakin University"
+      },
+      "sameAs": [
+        "https://www.instagram.com/dannybeaton/"
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -63,7 +87,7 @@
 <main id="main">
   <section class="hero hero--cut">
     <div class="hero-photo" aria-hidden="true">
-      <img class="hero-cut" src="/assets/img/danny-hero-cut-1400.webp" srcset="/assets/img/danny-hero-cut-900.webp 652w, /assets/img/danny-hero-cut-1400.webp 1014w" sizes="(max-width: 760px) 80vw, 460px" alt="" width="1014" height="1400" fetchpriority="high">
+      <img class="hero-cut" src="/assets/img/danny-hero-cut-1400.webp" srcset="/assets/img/danny-hero-cut-900.webp 652w, /assets/img/danny-hero-cut-1400.webp 1014w" sizes="(max-width: 760px) 80vw, 460px" alt="Danny Beaton, Australian fantasy author" width="1014" height="1400" fetchpriority="high">
     </div>
     <div class="hero-inner wrap">
       <h1 class="display" aria-label="Danny Beaton"><span class="w" aria-hidden="true"><span class="l" style="--i:0">D</span><span class="l" style="--i:1">a</span><span class="l" style="--i:2">n</span><span class="l" style="--i:3">n</span><span class="l" style="--i:4">y</span></span> <span class="w" aria-hidden="true"><span class="l" style="--i:5">B</span><span class="l" style="--i:6">e</span><span class="l" style="--i:7">a</span><span class="l" style="--i:8">t</span><span class="l" style="--i:9">o</span><span class="l" style="--i:10">n</span></span></h1>
@@ -99,7 +123,7 @@
       </div>
       <div class="shelf-grid">
         <a class="shelf-item reveal" href="/books#mal-winter" style="--mood: #2a4170">
-          <div class="cover has-art" data-draft><img src="/assets/img/cover-mal-winter-800.webp" srcset="/assets/img/cover-mal-winter-400.webp 400w, /assets/img/cover-mal-winter-800.webp 800w" sizes="(max-width: 560px) 45vw, (max-width: 960px) 40vw, 22vw" alt="Draft cover for Cloud Runner" width="800" height="1127" loading="lazy"></div>
+          <div class="cover has-art" data-draft><img src="/assets/img/cover-cloud-runner-800.webp" srcset="/assets/img/cover-cloud-runner-400.webp 400w, /assets/img/cover-cloud-runner-800.webp 800w" sizes="(max-width: 560px) 45vw, (max-width: 960px) 40vw, 22vw" alt="Draft cover for Cloud Runner" width="800" height="1127" loading="lazy"></div>
           <h3>Cloud Runner</h3>
           <span class="genre">YA fantasy</span>
           <span class="stamp rev">In revision</span>

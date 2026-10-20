@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://dannybeaton.com/</loc></url>
-  <url><loc>https://dannybeaton.com/books</loc></url>
-  <url><loc>https://dannybeaton.com/about</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://dannybeaton.com/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <image:image><image:loc>https://dannybeaton.com/assets/img/danny-hero-cut-1400.webp</image:loc></image:image>
+    <image:image><image:loc>https://dannybeaton.com/assets/img/cover-cloud-runner-800.webp</image:loc></image:image>
+    <image:image><image:loc>https://dannybeaton.com/assets/img/cover-ashes-of-neon-800.webp</image:loc></image:image>
+    <image:image><image:loc>https://dannybeaton.com/assets/img/cover-fable-bros-circus-800.webp</image:loc></image:image>
+    <image:image><image:loc>https://dannybeaton.com/assets/img/cover-ravenwraiths-800.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://dannybeaton.com/books</loc>
+    <lastmod>2026-10-20</lastmod>
+    <image:image><image:loc>https://dannybeaton.com/assets/img/cover-cloud-runner-800.webp</image:loc></image:image>
+    <image:image><image:loc>https://dannybeaton.com/assets/img/cover-ashes-of-neon-800.webp</image:loc></image:image>
+    <image:image><image:loc>https://dannybeaton.com/assets/img/cover-fable-bros-circus-800.webp</image:loc></image:image>
+    <image:image><image:loc>https://dannybeaton.com/assets/img/cover-ravenwraiths-800.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://dannybeaton.com/about</loc>
+    <lastmod>2026-10-20</lastmod>
+    <image:image><image:loc>https://dannybeaton.com/assets/img/danny-headshot-1200.webp</image:loc></image:image>
+    <image:image><image:loc>https://dannybeaton.com/assets/img/danny-cutout-1200.webp</image:loc></image:image>
+  </url>
 </urlset>
