@@ -19,6 +19,7 @@
   --muted: #7f8f89;
   --line: #222826;
   --accent: #13805f;
+  --accent-hi: #1a9a72;
   --on-accent: #e6f5ee;
   --ease: cubic-bezier(.2, .7, .2, 1);
 
@@ -57,6 +58,13 @@ h1 cite, h2 cite, h3 cite, .head cite, .display cite { font-style: normal; }
 .site-nav ul { list-style: none; padding: 0; display: flex; align-items: center; gap: clamp(16px, 3vw, 40px); font-size: 15px; font-weight: 500; }
 .site-nav a.u { padding-bottom: 2px; background: linear-gradient(currentColor 0 0) 0 100% / 0 1px no-repeat; transition: background-size .35s var(--ease); }
 .site-nav a.u:hover, .site-nav a.u[aria-current="page"] { background-size: 100% 1px; }
+.mark span, .site-nav a.u { transition: color .3s var(--ease), background-size .35s var(--ease); }
+.mark-sketch { transition: rotate .35s var(--ease), scale .35s var(--ease); }
+@media (hover: hover) {
+  .mark:hover span, .site-nav a.u:hover { color: var(--accent-hi); }
+  .mark:hover .mark-sketch { rotate: -14deg; scale: 1.08; }
+}
+@media (prefers-reduced-motion: reduce) { .mark:hover .mark-sketch { rotate: none; scale: none; } }
 
 .btn { display: inline-block; border: 0; border-radius: 10px; cursor: pointer; background: var(--accent); color: #fff; padding: 14px 22px; font: 600 15px/1.2 var(--ui); transition: transform .3s var(--ease), background .3s; }
 .btn:hover { transform: translateY(-2px); }
