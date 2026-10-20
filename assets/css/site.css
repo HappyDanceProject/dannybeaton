@@ -167,6 +167,7 @@ img { display: block; max-width: 100%; height: auto; }
 .chunk.flip .chunk-img { order: 2; }
 .chunk-img .ph, .chunk-img img { aspect-ratio: 4 / 5; width: 100%; object-fit: cover; }
 .chunk-img .label { display: block; margin-top: 14px; }
+.chunk-img img { filter: grayscale(.55) contrast(1.05) brightness(.92); }
 .chunk-text > .prose:first-child { margin-top: 0; }
 .chunk .lead { font-family: var(--serif); font-weight: 400; font-size: clamp(28px, 3.2vw, 44px); line-height: 1.18; letter-spacing: -.01em; text-wrap: balance; }
 .divider { padding-block: clamp(96px, 14vw, 200px); text-align: center; }
