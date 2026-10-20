@@ -1,0 +1,13 @@
+// Cloudflare Workers static-assets config for dannybeaton.com.
+// Cloudflare runs `npx wrangler deploy`, which uploads only the public/ folder as the site.
+{
+  "name": "dannybeaton",
+  "compatibility_date": "2025-09-01",
+  "assets": {
+    "directory": "./public",
+    // /books and /about serve books.html and about.html
+    "html_handling": "auto-trailing-slash",
+    // Unknown addresses get 404.html with a real 404 status
+    "not_found_handling": "404-page"
+  }
+}
