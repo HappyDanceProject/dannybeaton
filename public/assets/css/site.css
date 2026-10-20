@@ -209,6 +209,8 @@ h1 cite, h2 cite, h3 cite, .head cite, .display cite { font-style: normal; }
 .site-footer .wrap { display: flex; justify-content: space-between; align-items: end; gap: 24px 32px; flex-wrap: wrap; }
 .site-footer .wordmark { font-family: var(--display); font-weight: 800; font-stretch: 75%; text-transform: uppercase; font-size: clamp(40px, 5vw, 64px); line-height: .85; color: #f4f1ec; }
 .site-footer small { display: block; margin-top: 14px; font-size: 14px; }
+.foot-id { display: flex; align-items: end; gap: clamp(16px, 2vw, 28px); }
+.foot-id .sketch { width: auto; height: clamp(88px, 9vw, 124px); }
 .site-footer nav { display: flex; gap: 12px 28px; flex-wrap: wrap; }
 .site-footer nav a { color: #f4f1ec; border-bottom: 1px solid rgb(244 241 236 / .3); padding-bottom: 2px; }
 .site-footer nav a:hover { border-color: #f4f1ec; }
