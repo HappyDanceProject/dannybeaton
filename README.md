@@ -39,6 +39,8 @@ Search the HTML for `Replace` and `placeholder` to find them all.
 
 ## Notes
 
+- Italics are only for titles of books, games and films in running text: wrap them in `<cite>`. Headings and subheadings are never italic.
+
 - Fonts are licensed under the SIL Open Font License and are self-hosted, so nothing loads from Google.
 - The site is dark-only by design.
 - Animation: your name rises in on load, page titles and the Shelf fade in as they scroll into view, and pages cross-fade. Everything switches off for visitors who've asked their device for reduced motion.
