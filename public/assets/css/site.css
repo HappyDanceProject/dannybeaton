@@ -200,7 +200,7 @@ h1 cite, h2 cite, h3 cite, .head cite, .display cite { font-style: normal; }
 .hp { position: absolute; left: -9999px; }
 
 /* ---------- Footer ---------- */
-.site-footer { position: relative; margin-top: -28px; border-radius: 28px 28px 0 0; background: #0b3d2e; color: #b9d8cb; padding-block: 28px; font-size: 15px; }
+.site-footer { position: relative; margin-top: -28px; border-radius: 28px 28px 0 0; background: #0b3d2e; color: #b9d8cb; padding-block: 28px 14px; font-size: 15px; }
 .site-footer .wrap { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px 40px; }
 .foot-id { display: flex; align-items: center; gap: 14px; }
 .foot-id .sketch { width: auto; height: 52px; }
@@ -213,7 +213,7 @@ h1 cite, h2 cite, h3 cite, .head cite, .display cite { font-style: normal; }
 .foot-email:hover { color: #f4f1ec; border-color: #f4f1ec; }
 .foot-social { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; color: #f4f1ec; box-shadow: inset 0 0 0 1px rgb(244 241 236 / .3); transition: background .25s, color .25s; }
 .foot-social:hover { background: #f4f1ec; color: #0b3d2e; }
-.foot-copy { grid-column: 1 / -1; justify-self: stretch; font-size: 13px; color: #8fb8a7; border-top: 1px solid rgb(185 216 203 / .15); padding-top: 14px; margin-top: 6px; }
+.foot-copy { grid-column: 1 / -1; justify-self: stretch; font-size: 11.5px; color: #8fb8a7; border-top: 1px solid rgb(185 216 203 / .15); padding-top: 9px; margin-top: 4px; }
 @media (max-width: 760px) {
   .site-footer .wrap { grid-template-columns: 1fr; justify-items: center; gap: 18px; }
   .foot-pages { justify-content: center; }
