@@ -52,3 +52,10 @@ document.querySelectorAll('form[data-contact]').forEach((form) => {
     }
   });
 });
+
+// Signature writes itself when it scrolls into view.
+const sig = document.querySelector('.signature');
+if (sig) {
+  if (!('IntersectionObserver' in window)) sig.classList.add('in');
+  else new IntersectionObserver((es, o) => es.forEach((e) => { if (e.isIntersecting) { sig.classList.add('in'); o.disconnect(); } }), { rootMargin: '0px 0px -25% 0px' }).observe(sig.parentElement); // the clipped image itself never registers as visible
+}
