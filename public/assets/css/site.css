@@ -127,7 +127,7 @@ h1 cite, h2 cite, h3 cite, .head cite, .display cite { font-style: normal; }
 /* ---------- Currently ---------- */
 
 /* ---------- Shelf (home) ---------- */
-.shelf { background: var(--bg-2); padding-block: clamp(80px, 10vw, 160px); }
+.shelf { overflow: clip; background: var(--bg-2); padding-block: clamp(80px, 10vw, 160px); }
 .shelf-head { display: flex; justify-content: space-between; align-items: end; gap: 24px; flex-wrap: wrap; margin-bottom: clamp(40px, 6vw, 80px); }
 .shelf-head h2 { font-size: clamp(56px, 8vw, 120px); }
 .shelf-head .more { font: 500 16px/1.3 var(--ui); border-bottom: 1px solid var(--accent); padding-bottom: 3px; }
