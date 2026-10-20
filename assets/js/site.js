@@ -22,7 +22,7 @@ document.querySelectorAll('form[data-newsletter]').forEach((form) => {
   form.addEventListener('submit', (event) => {
     if (form.getAttribute('action')) return; // connected: let the provider handle it
     event.preventDefault();
-    form.querySelector('.form-note').textContent = 'Sign-ups open very soon. Check back shortly.';
+    (form.querySelector('.form-note') || form.parentElement.querySelector('.form-note')).textContent = 'Sign-ups open very soon. Check back shortly.';
   });
 });
 

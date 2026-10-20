@@ -1,0 +1,10 @@
+# Old dannybeaton.com.au page addresses -> new pages (Cloudflare Pages)
+/about-me.html                /about                     301
+/getintouch.html              /about#contact             301
+/mal-winter.html              /books#mal-winter          301
+/seeds-of-equilibrium.html    /books#ashes-of-neon       301
+/portfolio.html               /about                     301
+/posters.html                 /about                     301
+/blog.html                    /                          301
+/blog                         /                          301
+/blog/*                       /                          301
