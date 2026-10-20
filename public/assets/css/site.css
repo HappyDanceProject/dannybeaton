@@ -20,7 +20,6 @@
   --line: #222826;
   --accent: #13805f;
   --on-accent: #e6f5ee;
-  --band: linear-gradient(120deg, #0b3d2e 0%, #13805f 100%);
   --ease: cubic-bezier(.2, .7, .2, 1);
 
   color-scheme: dark;
@@ -142,10 +141,6 @@ h1 cite, h2 cite, h3 cite, .head cite, .display cite { font-style: normal; }
 .form-note { min-height: 1.5em; margin-top: 16px; font-size: 14px; color: var(--ink-2); }
 
 /* ---------- Band ---------- */
-.band { background: var(--band); color: var(--on-accent); padding-block: clamp(72px, 9vw, 140px); }
-.band .wrap { display: flex; justify-content: space-between; align-items: end; gap: 32px; flex-wrap: wrap; }
-.band h2 { font-size: clamp(52px, 8vw, 128px); }
-.band a.line { font-weight: 600; font-size: 18px; border-bottom: 2px solid currentColor; padding-bottom: 4px; color: #fff; }
 
 /* ---------- Page head (Books / About) ---------- */
 .page-head { padding-top: clamp(140px, 18vw, 240px); padding-bottom: clamp(64px, 8vw, 120px); }
@@ -205,15 +200,24 @@ h1 cite, h2 cite, h3 cite, .head cite, .display cite { font-style: normal; }
 .hp { position: absolute; left: -9999px; }
 
 /* ---------- Footer ---------- */
-.site-footer { background: #0b3d2e; color: #b9d8cb; padding-block: clamp(48px, 6vw, 80px); font-size: 15px; }
-.site-footer .wrap { display: flex; justify-content: space-between; align-items: end; gap: 24px 32px; flex-wrap: wrap; }
-.site-footer .wordmark { font-family: var(--display); font-weight: 800; font-stretch: 75%; text-transform: uppercase; font-size: clamp(40px, 5vw, 64px); line-height: .85; color: #f4f1ec; }
-.site-footer small { display: block; margin-top: 14px; font-size: 14px; }
-.foot-id { display: flex; align-items: end; gap: clamp(16px, 2vw, 28px); }
-.foot-id .sketch { width: auto; height: clamp(88px, 9vw, 124px); }
-.site-footer nav { display: flex; gap: 12px 28px; flex-wrap: wrap; }
-.site-footer nav a { color: #f4f1ec; border-bottom: 1px solid rgb(244 241 236 / .3); padding-bottom: 2px; }
-.site-footer nav a:hover { border-color: #f4f1ec; }
+.site-footer { background: #0b3d2e; color: #b9d8cb; padding-block: 28px; font-size: 15px; }
+.site-footer .wrap { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 12px 40px; }
+.foot-id { display: flex; align-items: center; gap: 14px; }
+.foot-id .sketch { width: auto; height: 52px; }
+.site-footer .wordmark { font-family: var(--display); font-weight: 800; font-stretch: 75%; text-transform: uppercase; font-size: 26px; line-height: 1; color: #f4f1ec; }
+.foot-pages { display: flex; gap: 28px; justify-content: center; font: 700 17px/1 var(--display); }
+.foot-pages a { color: #f4f1ec; }
+.foot-pages a:hover { color: #b9d8cb; }
+.foot-contact { display: flex; align-items: center; gap: 18px; }
+.foot-email { color: #b9d8cb; border-bottom: 1px solid rgb(185 216 203 / .35); padding-bottom: 2px; }
+.foot-email:hover { color: #f4f1ec; border-color: #f4f1ec; }
+.foot-social { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; color: #f4f1ec; box-shadow: inset 0 0 0 1px rgb(244 241 236 / .3); transition: background .25s, color .25s; }
+.foot-social:hover { background: #f4f1ec; color: #0b3d2e; }
+.foot-copy { grid-column: 1 / -1; justify-self: stretch; font-size: 13px; color: #8fb8a7; border-top: 1px solid rgb(185 216 203 / .15); padding-top: 14px; margin-top: 6px; }
+@media (max-width: 760px) {
+  .site-footer .wrap { grid-template-columns: 1fr; justify-items: start; gap: 18px; }
+  .foot-pages { justify-content: start; }
+}
 
 /* ---------- 404 ---------- */
 .lost { min-height: 80svh; display: grid; align-content: center; gap: 28px; }
