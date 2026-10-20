@@ -32,7 +32,7 @@ Search the HTML for `Replace` and `placeholder` to find them all.
 
 | What | Where | How |
 | --- | --- | --- |
-| Contact form | `public/about.html`, `action="https://formspree.io/f/YOUR_FORM_ID"` | Create a free form at formspree.io, set it to send to contact@dannybeaton.com, and swap in your form ID. Until then the form says it isn't connected and shows your email instead. |
+| Contact form | `public/about.html`, `action="https://formspree.io/f/YOUR_FORM_ID"` | Create a free form at formspree.io, set it to send to contact@dannybeaton.com, and swap in your form ID. Until then the form says it isn't switched on yet. Your email address isn't shown anywhere on the site. |
 | Newsletter | `public/index.html`, `<form class="signup" ... action="">` | In MailerLite or Kit, create an embedded form and copy its form `action` URL into `action=""`. Rename the email input's `name` to match: MailerLite uses `fields[email]`, Kit uses `email_address`. Until then the button says sign-ups open soon and subscribes nobody. |
 | Book covers | `public/index.html` and `public/books.html`, each `<div class="cover">` | Add `<img src="/assets/img/cover-ashes.webp" alt="">` inside the cover div and delete the `draft` / `t` / `a` spans. Use 2:3 portrait images. |
 | Photos | `public/assets/img/` | Export as `.webp`, around 1000px and 2000px wide for the hero, 600px and 1200px for portraits. |

@@ -37,7 +37,7 @@ document.querySelectorAll('form[data-contact]').forEach((form) => {
 
     const endpoint = form.getAttribute('action');
     if (!endpoint || endpoint.includes('YOUR_FORM_ID')) {
-      note.textContent = `The form isn’t connected yet. Please email ${form.dataset.email}.`;
+      note.textContent = 'The form isn’t switched on yet. Please try again soon.';
       return;
     }
 
@@ -48,7 +48,7 @@ document.querySelectorAll('form[data-contact]').forEach((form) => {
       form.reset();
       note.textContent = 'Thanks — your message is on its way.';
     } catch {
-      note.textContent = `That didn’t send. Please email ${form.dataset.email} instead.`;
+      note.textContent = 'That didn’t send. Please try again in a moment.';
     }
   });
 });
