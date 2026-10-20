@@ -100,7 +100,7 @@ h1 cite, h2 cite, h3 cite, .head cite, .display cite { font-style: normal; }
   .hero h1 { font-size: clamp(84px, 13.5vw, 230px); white-space: nowrap; }
   .hero h1.lines > span { display: inline-block; }
 }
-.tagline { font-size: clamp(24px, 3vw, 42px); line-height: 1.12; margin-top: 24px; animation: fade 1.2s .5s both; }
+.headline { font-family: var(--display); font-weight: 700; font-stretch: 90%; letter-spacing: -.02em; font-size: clamp(28px, 3.6vw, 52px); line-height: 1.05; text-wrap: balance; max-width: 18em; margin: 22px auto 0; animation: fade 1.2s .5s both; }
 
 /* Rising headline lines (hero + page heads) */
 .lines > span { display: block; overflow: clip; }
